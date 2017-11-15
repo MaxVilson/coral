@@ -1,0 +1,41 @@
+// В этом файле должны быть стили для БЭМ-блока social, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.social {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__link {
+    display: inline-block;
+    margin-left: 25px;
+    width: 20px;
+    height: 22px;
+    font-size: 0;
+    background-color: #fff;
+    cursor: pointer;
+
+    @media (min-width: ($screen-xl)) {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      outline-color: $color-main;
+      opacity: 0.8;
+    }
+
+    & svg {
+      width: 20px;
+      height: 22px;
+      fill: #ebebeb;
+
+      @media (min-width: ($screen-xl)) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+}

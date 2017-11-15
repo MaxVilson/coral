@@ -1,0 +1,165 @@
+// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-footer {
+  $block-name:                &; // #{$block-name}__element
+  background-color: #383838;
+
+  &__lists {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+
+    &--ml {
+      margin-left: 20px;
+
+      @media (min-width: $screen-xl) {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    & svg {
+      width: 28px;
+      height: 18px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color-main;
+    }
+
+    &:focus {
+      outline-color: $color-main;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 20px;
+    background-color: #252525;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__lists-bottom {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__block {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__block-title {
+
+    &--left {
+      text-align: left;
+    }
+  }
+
+  &__block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__block-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    background-color: #fff;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline-color: $color-main;
+    }
+
+    & svg {
+      width: 30px;
+      height: 30px;
+      fill: #fff;
+    }
+  }
+
+  &__input {
+    padding: 10px 50px 10px 10px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #343434;
+  }
+
+  &__submit {
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 6px 20px;
+    text-decoration: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: $color-main;
+    text-align: center;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2) inset;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline-color: $color-main;
+    }
+  }
+
+  &__copyright {
+    margin-top: 10px;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
+  }
+}

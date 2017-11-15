@@ -1,0 +1,38 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+
+<header class="page-header  page-header-search" role="banner">
+  <div class="page-header__bottom">
+    <div class="container">
+      <div class="page-header__bottom-wrapper">
+        <a href="index.html" class="page-header__logo  logo">
+          <img src="img/logo.png" alt="logo">
+        </a>
+
+        @@include('../main-nav/main-nav.html')
+
+        <div class="page-header__social  social">
+          <a href="" class="social__link social__link-vk">
+            Вконтакте
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#vk"></use></svg>
+          </a>
+          <a href="" class="social__link social__link-fb">
+            Facebook
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"></use></svg>
+          </a>
+          <a href="" class="social__link social__link-inst">
+            Instagram
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram"></use></svg>
+          </a>
+        </div>
+      </div>
+      <h2 class="page-header__title-search">Поиск тура</h2>
+      <p class="page-header__text-search">Лучшие предложения от 120 туроператоров, 100 000+ туров, 45+ стран, 500+ курортов</p>
+    </div>
+  </div>
+</header>

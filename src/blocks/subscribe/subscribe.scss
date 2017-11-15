@@ -1,0 +1,40 @@
+// В этом файле должны быть стили для БЭМ-блока subscribe, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.subscribe {
+  $block-name:                &; // #{$block-name}__element
+  display: none;
+  margin-top: 50px;
+  padding-bottom: 40px;
+
+  @media (min-width: ($screen-md)) {
+    display: block;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+
+    @media (min-width: ($screen-xl)) {
+      margin-top: 60px;
+    }
+  }
+
+  &__vk {
+    width: 430px;
+  }
+}

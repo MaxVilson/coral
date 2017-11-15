@@ -1,0 +1,30 @@
+<!--DEV Такой комментарий не попадет в собранный HTML
+<meta name="viewport" content="width=1000">
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--DEV Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключим это. -->
+<meta name="format-detection" content="telephone=no">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<link href="css/style.min.css" rel="stylesheet" media="screen">
+
+<script>
+  // Маркер работающего javascript
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  @@include('../blocks/is-mobile/is-mobile--to-head.js')
+</script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+<script src='https://ruspo.ru/v3/js/module-loader.js?ModuleID=38244&moduleType=fs&from=1206&where=102&color=yellow&bg=FFFFFF&round=1&exp=0&fli=1&ph=1&currency=0'></script>
+<script src='https://ruspo.ru/v3/js/module-loader.js?ModuleID=38244&moduleType=ah&from=1206&where=102&color=yellow&count=16&currency=0&openTourInPopup=1'></script>
+<script src="https://vk.com/js/api/openapi.js?150" type="text/javascript"></script>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<!--DEV Такой комментарий не попадет в собранный HTML
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+-->

@@ -1,0 +1,96 @@
+// В этом файле должны быть стили для БЭМ-блока owl-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.owl-carousel {
+  position: relative;
+  z-index: 1;
+
+  & img {
+    height: 500px;
+    background-size: cover;
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+  }
+
+  & .item-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    z-index: 2;
+    color: #fff;
+
+    @media (min-width: ($screen-xl)) {
+      bottom: 100px;
+    }
+  }
+
+  & .item-title {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (min-width: ($screen-xl)) {
+      padding: 10px 27px;
+      max-width: 535px;
+      font-size: 32px;
+    }
+
+    &--blue {
+      color: $color-main;
+      background-color: #fff;
+    }
+
+    &--orange {
+      color: rgb(239, 124, 0);
+      background-color: #fff;
+    }
+  }
+
+  & .item-text {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+
+    @media (min-width: ($screen-xl)) {
+      padding: 10px 27px;
+      max-width: 535px;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &--blue {
+      color: #fff;
+      background-color: $color-main;
+    }
+
+    &--orange {
+      color: #fff;
+      background-color: rgb(239, 124, 0);
+    }
+  }
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+
+  & .active {
+    background-color: $color-main;
+  }
+}
+
+.owl-dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px 7px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}

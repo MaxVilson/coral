@@ -1,0 +1,27 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('blocks/sale/sale.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+-->
+
+<section class="sale">
+  <div class="container">
+    <div class="sale__wrapper">
+      <div class="sale__wrapper-title">
+        <div class="sale__title">Ищешь тур и хочешь сэкономить?</div>
+        <p class="sale__sub-title">Получи скидочный купон на почту и сэкономь еще 500 рублей!</p>
+      </div>
+      <form action="sale.php" class="form  sale__form">
+        <input class="field-text__input  sale__field-text" type="email" placeholder="Введи свой e-mail">
+        <input class="sale__field-input" type="submit">
+      </form>
+      <p class="sale__text">Купон будет автоматически отправлен на почту.</p>
+      <p class="sale__text sale__text--sm">Спам не рассылаем, третьим лицам не передаём, бережно храним данные наших пользователей.</p>
+    </div>
+  </div>
+</section>
