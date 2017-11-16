@@ -1,0 +1,50 @@
+// В этом файле должны быть стили для БЭМ-блока documents, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.documents {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__items {
+    margin-top: 40px;
+
+    @media (min-width: ($screen-md)) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+
+    & img {
+      width: 248px;
+      height: 356px;
+    }
+  }
+
+  &__text {
+    margin-top: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    & span {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

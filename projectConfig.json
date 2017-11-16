@@ -61,8 +61,12 @@
     "partners": [],
     "map": [],
     "sale": [],
-    "subscribe": [],
-    "about-us": []
+    "subscribeSocial": [],
+    "about-us": [],
+    "advantages": [],
+    "documents": [],
+    "subscribeUs": [],
+    "submit": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

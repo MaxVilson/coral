@@ -7,6 +7,10 @@
   position: relative;
   padding-top: 40px;
 
+  &__wrapper {
+    text-align: center;
+  }
+
   &__title {
     position: relative;
     z-index: 2;

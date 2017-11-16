@@ -9,6 +9,7 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+  height: 100%;
   background-color: #fff;
 
   &__top-link {

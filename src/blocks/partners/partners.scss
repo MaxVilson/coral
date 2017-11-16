@@ -5,16 +5,21 @@
 .partners {
   display: none;
   margin-top: 20px;
+  padding-bottom: 40px;
 
   @media (min-width: $screen-md) {
     display: block;
+  }
+
+  &__wrapper {
+    text-align: center;
   }
 
   &__title {
     text-align: center;
   }
 
-  &__wrapper {
+  &__items {
 
     @media (min-width: $screen-md) {
       display: flex;

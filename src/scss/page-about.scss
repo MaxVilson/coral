@@ -3,21 +3,36 @@
   &__top-wrapper {
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  &__top-wrapper-text {
+
+    @media (min-width: ($screen-md)) {
+      width: 600px;
+    }
   }
 
   &__title {
-    margin: 0;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0;
     color: #fff;
-    font-size: 40px;
   }
 
   &__text {
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 0;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 34px;
     color: #fff;
+
+    @media (min-width: ($screen-md)) {
+
+    }
   }
 }

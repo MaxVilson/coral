@@ -35,17 +35,23 @@ $border-radius:               3px !default;
   &__input {
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
-    // height: 2.125em;
-    padding: $field-padding-vertical  $field-padding-horizontal;
     margin: 0;
+    padding: 10px;
+    width: 100%;
     line-height: $line-height;
     font-size: 1em;
     font-family: inherit;
-    background-color: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
     appearance: textfield;
+    border: 2px solid black;
+    background-color: transparent;
+
+    @media (min-width: $screen-sm) {
+      max-width: 60%;
+    }
+
+    &::placeholder {
+      color: #000;
+    }
 
     &:focus {
       @include field-focus;
@@ -70,11 +76,6 @@ $border-radius:               3px !default;
     &[type='color'] {
       // max-width: 100px;
       padding: 0;
-    }
-
-    &::placeholder {
-      color: $text-color--muted;
-      opacity: 1;
     }
 
     @at-root textarea#{&} {
