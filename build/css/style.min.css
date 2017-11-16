@@ -2285,6 +2285,8 @@ a.pagination__item:hover, a.pagination__item:focus {
       margin-left: 1.8em; }
       .field-text__input {
         max-width: 60%; }
+      .page-footer__input {
+        max-width: initial; }
       .sale__wrapper-title {
         width: initial; } }
 @media (min-width: 768px) {
