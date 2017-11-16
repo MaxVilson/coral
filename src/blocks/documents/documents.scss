@@ -18,7 +18,7 @@
   }
 
   &__items {
-    margin-top: 40px;
+    margin-top: 20px;
 
     @media (min-width: ($screen-md)) {
       display: flex;
@@ -27,6 +27,11 @@
   }
 
   &__item {
+    margin-top: 10px;
+
+    @media (min-width: ($screen-md)) {
+      margin-top: 0;
+    }
 
     & img {
       width: 248px;
@@ -40,7 +45,14 @@
     text-transform: uppercase;
 
     & span {
+      display: block;
+      margin-top: 7px;
       margin-left: 20px;
+
+      @media (min-width: ($screen-md)) {
+        display: inline;
+        margin-top: 0;
+      }
 
       &:first-child {
         margin-left: 0;

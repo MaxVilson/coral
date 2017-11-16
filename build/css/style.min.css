@@ -2213,15 +2213,19 @@ a.pagination__item:hover, a.pagination__item:focus {
 .documents__title {
     text-align: center; }
 .documents__items {
-    margin-top: 40px; }
+    margin-top: 20px; }
+.documents__item {
+    margin-top: 10px; }
 .documents__item img {
-    width: 248px;
-    height: 356px; }
+      width: 248px;
+      height: 356px; }
 .documents__text {
     margin-top: 40px;
     font-size: 20px;
     text-transform: uppercase; }
 .documents__text span {
+      display: block;
+      margin-top: 7px;
       margin-left: 20px; }
 .documents__text span:first-child {
         margin-left: 0; }
@@ -2355,6 +2359,11 @@ a.pagination__item:hover, a.pagination__item:focus {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
+      .documents__item {
+        margin-top: 0; }
+        .documents__text span {
+          display: inline;
+          margin-top: 0; }
   .page-about__top-wrapper-text {
     width: 600px; } }
 @media (min-width: 992px) {
