@@ -15,8 +15,13 @@
     position: relative;
     z-index: 2;
     margin: 0;
+    font-size: 30px;
     text-align: center;
     color: #fff;
+
+    @media (min-width: ($screen-xl)) {
+      font-size: 35px;
+    }
   }
 
   &__text {

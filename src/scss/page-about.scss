@@ -21,7 +21,12 @@
     position: relative;
     margin-top: 20px;
     margin-bottom: 0;
+    font-size: 30px;
     color: #fff;
+
+    @media (min-width: ($screen-xl)) {
+      font-size: 35px;
+    }
   }
 
   &__text {

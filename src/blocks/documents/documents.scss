@@ -47,11 +47,11 @@
     & span {
       display: block;
       margin-top: 7px;
-      margin-left: 20px;
 
       @media (min-width: ($screen-md)) {
         display: inline;
         margin-top: 0;
+        margin-left: 20px;
       }
 
       &:first-child {
