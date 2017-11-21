@@ -653,6 +653,8 @@ pre {
   z-index: 2;
   display: inline-block;
   white-space: nowrap; }
+.logo img {
+    height: 70px; }
 .logo:focus {
     outline-color: #fee300; }
 .btn {
@@ -697,17 +699,17 @@ pre {
 a.btn--disabled {
       pointer-events: none; }
 .newsletter {
-  background-image: url(../img/sprite-08042616879923838.png);
+  background-image: url(../img/sprite-0904779229993119.png);
   background-position: 0px -36px;
   width: 16px;
   height: 10px; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08042616879923838.png);
+  background-image: url(../img/sprite-0904779229993119.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08042616879923838.png);
+  background-image: url(../img/sprite-0904779229993119.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -1849,7 +1851,6 @@ a.pagination__item:hover, a.pagination__item:focus {
 .page-header-search {
   position: relative; }
 .page-header {
-  height: 100%;
   background-color: #fff; }
 .page-header__top-link {
     display: -webkit-box;
@@ -2260,34 +2261,71 @@ a.pagination__item:hover, a.pagination__item:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 .accordion {
+  padding-bottom: 50px;
   overflow: hidden;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   background: #f7f7f7; }
+.accordion__wrapper {
+    position: relative; }
+.accordion__nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none; }
+.accordion__nav-item {
+    position: relative;
+    border-top: 1px dashed transparent;
+    border-bottom: 1px dashed #000;
+    background-color: #fee300;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+.accordion__nav-link {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000; }
+.accordion__content {
+    padding-right: 20px;
+    padding-left: 20px; }
+.accordion__link {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #666; }
 /*----- Section Titles -----*/
 .accordion-section-title {
   width: 100%;
-  padding: 15px;
+  padding: 10px 15px;
   display: inline-block;
-  border-bottom: 1px solid #1a1a1a;
-  background: #333;
+  background-color: #fff;
   -webkit-transition: all linear 0.15s;
   transition: all linear 0.15s;
-  /* Type */
-  font-size: 1.200em;
-  text-shadow: 0px 1px 0px #1a1a1a;
-  color: #fff; }
-.accordion-section-title.active, .accordion-section-title:hover {
-  background: #4c4c4c;
-  /* Type */
-  text-decoration: none; }
-.accordion-section:last-child .accordion-section-title {
-  border-bottom: none; }
+  font-size: 18px;
+  text-decoration: none;
+  color: #333; }
 /*----- Section Content -----*/
 .accordion-section-content {
-  padding: 15px;
-  display: none; }
+  padding: 5px 15px;
+  display: none;
+  background-color: #fff; }
+.accordion-section-content p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #666; }
+.accordion-section {
+  margin-top: 5px; }
+.accordion-section:hover {
+    -webkit-box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
+            box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3); }
 .page-tours__title {
   text-align: center; }
 .page-about__top-wrapper {
@@ -2517,6 +2555,34 @@ a.pagination__item:hover, a.pagination__item:focus {
     .subscribeUs {
       padding-top: 50px;
       padding-bottom: 50px; }
+      .accordion__nav-item:hover {
+        border-top: 1px dashed #000;
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px); }
+      .accordion__nav-item:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        left: calc(50% - 10px);
+        bottom: 0;
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: #000 transparent transparent transparent;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px); }
+      .accordion__nav-item:last-child:before {
+        border: none; }
+      .accordion__content {
+        padding-right: 50px;
+        padding-left: 50px; }
+      .accordion__link {
+        font-size: 25px; }
     .page-about__title {
       font-size: 35px; } }
 @media (min-width: 1800px) {

@@ -6,38 +6,125 @@
 }
 
 .accordion {
-    overflow:hidden;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-    border-radius:3px;
-    background:#f7f7f7;
+  padding-bottom: 50px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background: #f7f7f7;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+  }
+
+  &__nav-item {
+    position: relative;
+    border-top: 1px dashed transparent;
+    border-bottom: 1px dashed #000;
+    background-color: $color-main;
+    transition: all 0.5s;
+
+    @media (min-width: ($screen-xl)) {
+
+      &:hover {
+        border-top: 1px dashed #000;
+        transform: translateY(-10px);
+      }
+
+      &:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        left: calc(50% - 10px);
+        bottom: 0;
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: #000 transparent transparent transparent;
+        transition-duration: 0.3s;
+        transition-property: transform;
+        transform: translateY(10px);
+      }
+
+      &:last-child {
+
+        &:before {
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__content {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: ($screen-xl)) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #666;
+
+    @media (min-width: ($screen-xl)) {
+      font-size: 25px;
+    }
+  }
 }
 
 /*----- Section Titles -----*/
 .accordion-section-title {
-    width:100%;
-    padding:15px;
-    display:inline-block;
-    border-bottom:1px solid #1a1a1a;
-    background:#333;
-    transition:all linear 0.15s;
-    /* Type */
-    font-size:1.200em;
-    text-shadow:0px 1px 0px #1a1a1a;
-    color:#fff;
-}
-
-.accordion-section-title.active, .accordion-section-title:hover {
-    background:#4c4c4c;
-    /* Type */
-    text-decoration:none;
-}
-
-.accordion-section:last-child .accordion-section-title {
-    border-bottom:none;
+    width: 100%;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: #fff;
+    transition: all linear 0.15s;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
 }
 
 /*----- Section Content -----*/
 .accordion-section-content {
-    padding:15px;
-    display:none;
+  padding: 5px 15px;
+  display: none;
+  background-color: #fff;
+
+  & p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #666;
+  }
+}
+
+.accordion-section {
+  margin-top: 5px;
+
+  &:hover {
+    box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
+  }
 }
