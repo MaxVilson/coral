@@ -19,6 +19,7 @@ $transition-time:             0.3s !default;
 
 .main-nav {
   $block-name:                &; // #{$block-name}__element
+  background-color: transparent;
 
   // первый уровень
   &__list {

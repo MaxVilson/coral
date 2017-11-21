@@ -76,6 +76,7 @@ h1 {
 h2 {
   position: relative;
   display: inline-block;
+  font-size: 25px;
 
   @media (min-width: $screen-xl) {
     font-size: 35px;

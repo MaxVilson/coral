@@ -81,7 +81,8 @@
     "./src/scss/print.scss",
     "./src/scss/page-index.scss",
     "./src/scss/page-tours.scss",
-    "./src/scss/page-about.scss"
+    "./src/scss/page-about.scss",
+    "./src/scss/page-question.scss"
   ],
   "singleCompiled": [
     "./src/scss/blocks-library.scss"

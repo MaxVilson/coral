@@ -9,6 +9,7 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+  padding-bottom: 1px;
   background-color: #fff;
 
   &__top-link {
@@ -53,7 +54,7 @@
 
   &__toggler {
     position: absolute;
-    top: 50px;
+    top: 25px;
     right: 0;
   }
 }
