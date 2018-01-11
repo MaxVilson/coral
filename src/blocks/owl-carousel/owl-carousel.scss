@@ -4,10 +4,9 @@
 
 .owl-carousel {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   & img {
-    height: 500px;
     background-size: cover;
   }
 
@@ -75,22 +74,26 @@
   }
 }
 
-.owl-dots {
+.owl-prev {
   position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-
-  & .active {
-    background-color: $color-main;
-  }
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  transform: rotate(-180deg);
 }
-
-.owl-dot {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 5px 7px;
-  border: 2px solid #fff;
-  border-radius: 50%;
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
 }

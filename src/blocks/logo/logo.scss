@@ -9,9 +9,16 @@
   z-index: 2;
   display: inline-block;
   white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   & img {
-    height: 70px;
+    width: 230px;
+    height: 65px;
+
+    @media (min-width: ($screen-md)) {
+      width: 300px;
+    }
   }
 
   &:focus {

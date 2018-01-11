@@ -27,14 +27,30 @@
   }
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
 
     @media (min-width: ($screen-xl)) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
       margin-top: 60px;
     }
   }
 
   &__vk {
     width: 430px;
+  }
+}
+
+.fb-page {
+  margin-top: 30px;
+  width: 404px;
+  height: 220px;
+
+  @media (min-width: ($screen-xl)) {
+    margin-top: 0;
   }
 }

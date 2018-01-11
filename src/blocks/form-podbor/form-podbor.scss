@@ -1,0 +1,31 @@
+// В этом файле должны быть стили для БЭМ-блока form-podbor, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.form-podbor {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__submit {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+    border: none;
+    background-color: #fee300;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #5c91c6;
+      transition: all 0.2s;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+  }

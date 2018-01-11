@@ -1,0 +1,18 @@
+.page-contacts {
+
+  &__title-wrapper {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__text-link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5c91c6;;
+  }
+}

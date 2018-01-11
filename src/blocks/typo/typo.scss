@@ -70,6 +70,7 @@ h6 {
 // .h1,
 h1 {
   font-size: $font-size--h1;
+  font-weight: 700;
 }
 
 // .h2,
@@ -231,4 +232,11 @@ pre {
   width: 100%;
   overflow-x: auto;
   tab-size: 2;
+}
+
+button,
+a {
+  &:focus {
+    outline-color: $color-main;
+  }
 }

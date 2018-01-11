@@ -31,7 +31,7 @@ $z-index-modal:               100 !default;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $z-index-modal;
+  z-index: 100000;
   -webkit-overflow-scrolling: touch;
 
   .js-modal-open & {
@@ -59,24 +59,27 @@ $z-index-modal:               100 !default;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5px;
     min-width: 100%;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
+    border-radius: 5px;
   }
 
   &__header {
     padding: 5px 40px 0 10px;
     flex-shrink: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #fee300;
   }
 
   &__title {
     margin-top: ($line-height / 2);
     margin-bottom: ($line-height / 2);
-    font-size: $font-size--h4;
+    font-size: 19px;
     line-height: 1.4;
     font-weight: 700;
-    color: currentColor;
   }
 
   &__close {
@@ -86,7 +89,9 @@ $z-index-modal:               100 !default;
   }
 
   &__body {
-    padding: 0 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
     flex-grow: 1;
   }
 

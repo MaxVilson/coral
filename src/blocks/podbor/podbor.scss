@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока podbor, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.podbor {
+
+  $block-name:                &; // #{$block-name}__element
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 1000;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  background-color: #fee300;
+  writing-mode: vertical-lr;
+  cursor: pointer;
+  transform: translate(5px, -92px);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translate(0, -92px);
+  }
+}

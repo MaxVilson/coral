@@ -43,6 +43,7 @@
   }
 
   &__link {
+    font-size: 18px;
     text-decoration: none;
     color: $text-color;
 
@@ -125,6 +126,10 @@
     color: #fff;
     background-color: #000;
     border: 1px solid #343434;
+
+    &::placeholder {
+      color: #fff;
+    }
 
     @media (min-width: $screen-sm) {
       max-width: initial;

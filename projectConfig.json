@@ -67,7 +67,10 @@
     "documents": [],
     "subscribeUs": [],
     "submit": [],
-    "accordion": []
+    "accordion": [],
+    "contact": [],
+    "podbor": [],
+    "form-podbor": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -82,7 +85,8 @@
     "./src/scss/page-index.scss",
     "./src/scss/page-tours.scss",
     "./src/scss/page-about.scss",
-    "./src/scss/page-question.scss"
+    "./src/scss/page-question.scss",
+    "./src/scss/page-contacts.scss"
   ],
   "singleCompiled": [
     "./src/scss/blocks-library.scss"
